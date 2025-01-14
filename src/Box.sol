@@ -16,7 +16,7 @@ contract Box is Ownable {
     emit NumberChanged(newNumber);
   }
 
-  function readNumber() public view onlyOwner returns (uint256){
+  function readNumber() public view returns (uint256){
     return s_number;
   }
 }
